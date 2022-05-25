@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Michelle Studios | Home </title>
+    <style type="text/css">
+        
+        header {line-height: 200% }
+        h {font-family:sans-serif}
+        h {text-align: center}
+        h {font-size: 200%}
+        h {color: white}
+        h1 {text-align: center} 
+        h1{color:white}
+        h1 {line-height: 1300%}
+        h1 {font-size: 300%}
+        h1 {font-family:sans-serif}
+       
+        p {text-align: center}
+        p {font-size: 250%}
+        p {font-family: sans-serif}
+        ul {font-family: sans-serif}
+        ul{font-size: 130%}
+        footer {background-color: black}
+        footer {color: white}
+        footer {font-size: 40%}
+        
+* {box-sizing:border-box}
+.slideshow-container 
+{max-width: 1000px;
+position: relative;
+margin: auto;}
+
+.mySlides { display: none;}
+
+.prev, .next { cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;}
+
+.next {right: 0;
+  border-radius: 3px 0 0 3px;}
+
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+
+.text {color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;}
+
+.numbertext { color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;}
+
+.dot { cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+
+.active, .dot:hover {
+  background-color: #717171;}
+
+.fade {animation-name: fade;
+  animation-duration: 1.5s;}
+
+@keyframes fade {from {opacity: .4}
+  to {opacity: 1}}
+        
+    </style>
+    </head>
+
+    <header>
+        <center>
+        <img src="new%20logo.png"  alt="logo" width=550px height=300px>
+  
+   </center>  
+        <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;}
+
+li {float: left;}
+
+li a {display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+
+li a:hover { background-color: #111;}
+</style>
+
+
+
+<ul>
+  <li><a href="Movie%20Theatre.html">Home</a></li>
+  <li><a href="What's%20On.html">What's On</a></li>
+  <li><a href="Eat.html">Eat</a></li>
+   <li><a href="Contact%20Us.html">Contact Us</a></li>
+  <li><a href="About%20Us.html">About Us</a></li>
+  
+</ul>
+      <h>.</h>
+    </header>
+    <body>
+    
+        
+    <div class="slideshow-container">
+
+ 
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Slideshow/Cinema%202.jpg" style="width:100%">
+    <div class="text">One of our many theatre rooms</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Slideshow/Res.jpg"style="width:100%">
+    <div class="text">The Thenels Resturant</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Slideshow/Cinema%203.jpg"style="width:100%">
+    <div class="text">Our lobby</div>
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);}
+
+function showSlides(n) { let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");}
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";}
+</script>  
+    </body>   
+
+<body>
+<p>What's On Today? </p>
+<p>
+<img src="Posters/Annette.jpg" alt="logo" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Antim.jpg" alt="logo" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Old.jpg" alt="logo" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Ava.jpg" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Star%20Wars.jpg" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Die%20Hard.jpg" width=300px height=400px hspace=50px vspace=20px>
+    </p>
+<p> Whats On Tomorrow?</p>
+<p>
+<img src="Posters/Interlocking.jpg"alt="logo" width=300px height=400px hspace=50px vspace=20px> 
+<img src="Posters/Luca.jpg"alt="logo" width=300px height=400px hspace=50px vspace=20px >
+<img src="Posters/Tangled.jpg" alt="logo" width=300px height=400px hspace=50px>
+<img src="Posters/Barfi.jpg" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Assassin.jpg" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Soul.jpg" width=300px height=400px hspace=50px vspace=20px>
+    </p>
+<p> Coming Soon! </p>
+    <p> 
+<img src="Posters/Pirates%20of%20the%20Carribean.jpg" alt="logo" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Monopoly.jpg" alt="logo" width=300px height=400px hspace=50px vspace=20px >
+<img src="Posters/Daybreakers.jpg" alt="logo" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Batman.jpg" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Chicken%20Little.jpg" width=300px height=400px hspace=50px vspace=20px>
+<img src="Posters/Jaws.jpg" width=300px height=400px hspace=50px vspace=20px>
+</p>
+    
+<footer>
+   <p>Michelle Studios Luxury Film Theatre</p> 
+    <p>All rights are reserved</p>
+    <p>2441 Sir Seretse Khama Street</p>
+    <p> (+267) 5881651</p>
+    <p>Gaborone</p>
+    </footer>
+    </body>
+<html> 
